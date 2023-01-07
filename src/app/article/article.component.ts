@@ -11,7 +11,7 @@ export class ArticleComponent implements OnInit {
   @Input() article: Article;
 
   constructor() {
-    article = new Article("","",0);
+    this.article = new Article("","",0);
   }
 
   voteUp(): boolean {
@@ -25,6 +25,5 @@ export class ArticleComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if(this.ngInit) { this.ngInit(); }
   }
 }
