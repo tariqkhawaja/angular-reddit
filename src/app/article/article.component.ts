@@ -11,15 +11,7 @@ export class ArticleComponent implements OnInit {
   @Input() article: Article;
 
   constructor() {
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-	this.article = new Article("","",0);
-=======
     article = new Article("","",0);
->>>>>>> deeb9151842ed419d46ee27ce9d74832d63c2143
->>>>>>> 89cf07e3427ce27b5e5fcf113bb8aaadd775517b
   }
 
   voteUp(): boolean {
@@ -33,6 +25,6 @@ export class ArticleComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if(this.ngInit) { this.ngInit(); }
   }
-
 }
