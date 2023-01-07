@@ -11,9 +11,8 @@ export class ArticleComponent implements OnInit {
   @Input() article: Article;
 
   constructor() {
-	this.article = new Article("","",0);
   }
-  
+
   voteUp(): boolean {
 	this.article.voteUp();
 	return false;
