@@ -8,6 +8,7 @@ import { Article } from './article/article.model'; // import Article
 })
 export class AppComponent {
 	articles: Article[]; // array of articles as a component property
+  title: any;
 
 	constructor() {
 		this.articles = [
